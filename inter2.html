@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter FC - La Nostra Passione Nerazzurra</title>
+    <style>
+        /* Stile CSS integrato nel file HTML per semplicità */
+        body {
+            font-family: 'Inter', Arial, sans-serif; /* Ho aggiunto 'Inter' come font preferito, se disponibile */
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #000; /* Nero Inter */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.3em;
+            margin-top: 5px;
+        }
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            position: sticky; /* Rende la navbar "appiccicosa" in cima */
+            top: 0; /* Si attacca in cima alla finestra */
+            z-index: 1000; /* Assicura che sia sopra gli altri elementi */
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 18px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 5px 0;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: #007bff; /* Blu acceso per l'hover */
+        }
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        .hero-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #000;
+            border-bottom: 3px solid #000;
+            padding-bottom: 12px;
+            margin-top: 35px;
+            font-size: 2.2em;
+        }
+        h3 {
+            color: #007bff; /* Blu Inter per i sottotitoli delle notizie e sottosezioni */
+            margin-top: 20px;
+            font-size: 1.6em;
+        }
+        article {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eee;
+        }
+        article:last-of-type {
+            border-bottom: none;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+        /* Media Queries per la responsività */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+            .container {
+                width: 95%;
+                margin: 15px auto;
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.8em;
+            }
+            h3 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Forza Inter!</h1>
+        <p>Il Sito non Ufficiale della Nostra Passione Nerazzurra</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#storia">Storia</a></li>
+            <li><a href="#squadra">Squadra Attuale</a></li>
+            <li><a href="#trofei">Trofei</a></li>
+            <li><a href="#ultime-notizie">Ultime Notizie</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <div class="hero-image">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/2048px-FC_Internazionale_Milano_2021.svg.png" alt="Logo Inter FC">
+            </div>
+            <h2>Benvenuti nel Mondo Nerazzurro</h2>
+            <p>Questo è un sito dedicato a tutti i tifosi dell'Inter! Qui potrai trovare informazioni sulla storia gloriosa del club, la squadra attuale, i trofei vinti, le ultime notizie e molto altro.</p>
+            <p>L'Inter è più di una squadra, è una famiglia, una passione che ci lega e ci fa sognare ogni giorno. Fondata il 9 marzo 1908, l'Internazionale Milano ha sempre avuto una vocazione internazionale, accogliendo giocatori di ogni nazionalità.</p>
+        </section>
+
+        ---
+
+        <section id="storia">
+            <h2>La Nostra Storia Gloriosa</h2>
+            <p>Fondata il 9 marzo 1908 da 44 dirigenti del Milan contrari al divieto di acquisto di giocatori stranieri, l'Internazionale Milano aprì subito le porte a tutte le nazionalità, da cui il nome "Internazionale". I colori scelti furono il nero e l'azzurro, quelli della notte e del cielo, simboli di stelle.</p>
+            <p>La storia dell'Inter è costellata di successi. Dopo il primo Scudetto nel 1910, il club ha attraversato varie fasi, inclusi periodi di cambio nome durante il fascismo (Ambrosiana, Ambrosiana-Inter) per poi tornare a "Inter" nel 1945.</p>
+            <h3>La Grande Inter (Anni '60)</h3>
+            <p>Il mito della "Grande Inter" di Angelo Moratti ed Elenio Herrera negli anni '60 ha portato alla conquista di tre Scudetti e due Coppe dei Campioni (1964 e 1965), affermando il club ai vertici del calcio europeo. Squadra iconica con giocatori come Facchetti, Mazzola, Suarez.</p>
+            <div class="container">
+        <section id="home">
+            <div class="hero-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Formazione_dell%27Inter_1964-1965.jpg" alt="squadra inter 64-65">
+            
+            <h3>Il Periodo Recente e il Triplete (2010)</h3>
+            <p>Nei decenni successivi, l'Inter ha continuato a vincere trofei, tra cui numerose Coppe Italia e altri Scudetti. Il ritorno al vertice europeo si è avuto con la vittoria della Coppa UEFA nel 1998 con Ronaldo e, più recentemente, il leggendario "Triplete" del 2010 sotto la guida di José Mourinho, che vide l'Inter conquistare Scudetto, Coppa Italia e UEFA Champions League nella stessa stagione. Un'impresa storica che ha cementato il club nella leggenda del calcio mondiale.</p>
+            <div class="container">
+        <section id="home">
+            <div class="hero-image">
+                <img src="https://interfans.org/wp-content/uploads/EYk0MCuWoAUhPT9.jpg" alt="triplete inter 2010">
+            <h3>I Successi Contemporanei</h3>          
+            <p>Ad oggi, l'Inter vanta 20 scudetti, 9 Coppe Italia, 8 Supercoppe Italiane, 3 UEFA Champions League, 3 Coppe UEFA/Europa League, 2 Coppe Intercontinentali e una Coppa del mondo per club FIFA. Il club continua a lottare per la leadership in Italia e in Europa, con una base di tifosi appassionata e globale.</p>
+            <p>Per maggiori dettagli sulla storia dell'Inter, puoi consultare: <a href="https://it.wikipedia.org/wiki/Storia_del_Football_Club_Internazionale_Milano" target="_blank" rel="noopener noreferrer">Storia del Football Club Internazionale Milano su Wikipedia</a>.</p>
+        </section>
+
+        ---
+
+        <section id="squadra">
+            <h2>Squadra Attuale (Stagione 2024-2025)</h2>
+            <div class="container">
+        <section id="home">
+            <div class="hero-image"><img src="https://intermilan.bynder.com/m/42d4f8fc51eb8237/webimage-20240830205412_1683415606.png" alt="squasra Inter 24-25">
+            <p>Ecco i protagonisti della rosa dell'Inter per la stagione 2024-2025, sotto la guida dell'allenatore Simone Inzaghi. La squadra è un mix di esperienza e talento, pronta a competere su tutti i fronti.</p>
+            <h3>Portieri</h3>
+            <ul>
+                <li>Yann Sommer</li>
+                <li>Josep Martínez</li>
+                <li>Raffaele Di Gennaro</li>                
+            </ul>
+            <h3>Difensori</h3>
+            <ul>
+                <li>Alessandro Bastoni</li>
+                <li>Benjamin Pavard</li>
+                <li>Stefan de Vrij</li>
+                <li>Francesco Acerbi</li>
+                <li>Denzel Dumfries</li>
+                <li>Federico Dimarco</li>
+                <li>Carlos Augusto</li>
+                <li>Yann Bisseck</li>
+                <li>Matteo Darmian</li>
+            </ul>
+            <h3>Centrocampisti</h3>
+            <ul>
+                <li>Nicolò Barella (Vice-Capitano)</li>
+                <li>Hakan Çalhanoğlu</li>
+                <li>Henrikh Mkhitaryan</li>
+                <li>Davide Frattesi</li>
+                <li>Piotr Zieliński</li>
+                <li>Kristjan Asllani</li>
+                <li>Valentín Carboni</li>
+                <li>Nicola Zalewski</li>
+            </ul>
+            <h3>Attaccanti</h3>
+            <ul>
+                <li>Lautaro Martínez (Capitano)</li>
+                <li>Marcus Thuram</li>
+                <li>Mehdi Taremi</li>
+                <li>Marko Arnautović</li>
+                <li>Joaquín Correa</li>
+            </ul>
+            <p>L'allenatore della squadra è **Simone Inzaghi**.</p>
+            <p>Fonte per la rosa: <a href="https://www.transfermarkt.com/inter-milan/kader/verein/46" target="_blank" rel="noopener noreferrer">Inter Milan - Detailed squad 24/25 | Transfermarkt</a></p>
+        </section>
+
+        ---
+
+        <section id="trofei">
+            <h2>I Nostri Trofei</h2>
+            <p>Il Palmarès Glorioso dell'Inter</p>
+            <div class="container">
+        <section id="home">
+            <div class="hero-image">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Sala_trofei_Inter_maggio_2024.jpg" alt="trofei inter">   
+            <p>L'Internazionale Milano vanta un palmarès ricchissimo, che la pone tra i club più titolati d'Italia e del mondo. Un percorso fatto di vittorie indimenticabili, che hanno riempito la bacheca nerazzurra.</p>
+
+            <h3>Competizioni Nazionali</h3>
+            <ul>
+                <li><strong>Campionato di Serie A: 20 Scudetti</strong> <br> (Ultimo: 2023-2024 - Seconda Stella!)</li>
+                <li><strong>Coppa Italia: 9 Trofei</strong> <br> (Ultimo: 2022-2023)</li>
+                <li><strong>Supercoppa Italiana: 8 Trofei</strong> <br> (Ultimo: 2023-2024)</li>
+            </ul>
+
+            <h3>Competizioni Europee</h3>
+            <ul>
+                <li><strong>UEFA Champions League (già Coppa dei Campioni): 3 Trofei</strong> <br> (1963-64, 1964-65, 2009-10 - L'anno del Triplete!)</li>
+                <li><strong>Coppa UEFA / UEFA Europa League: 3 Trofei</strong> <br> (1990-91, 1993-94, 1997-98)</li>
+            </ul>
+
+            <h3>Competizioni Mondiali per Club</h3>
+            <ul>
+                <li><strong>Coppa Intercontinentale: 2 Trofei</strong> <br> (1964, 1965)</li>
+                <li><strong>Coppa del mondo per club FIFA: 1 Trofeo</strong> <br> (2010 - Completamento del Triplete!)</li>
+            </ul>
+
+            <p>L'Inter è l'unica squadra italiana ad aver conquistato il "Triplete" (campionato, coppa nazionale e Champions League nella stessa stagione) nel 2010, e ha recentemente raggiunto la storica "seconda stella" con la vittoria del 20° Scudetto nella stagione 2023-2024.</p>
+            <p>Per un elenco dettagliato di tutti i trofei e le relative stagioni, puoi consultare: <a href="https://www.inter.it/en/club/honours" target="_blank" rel="noopener noreferrer">Honours | Inter.it</a> o <a href="https://it.wikipedia.org/wiki/Palmar%C3%A8s_del_Football_Club_Internazionale_Milano" target="_blank" rel="noopener noreferrer">Palmarès del Football Club Internazionale Milano su Wikipedia</a>.</p>
+        </section>
+
+        ---
+
+        <section id="ultime-notizie">
+            <h2>Ultime Notizie Nerazzurre</h2>
+            <p>Rimani aggiornato su tutto ciò che accade nel mondo Inter! Dalle partite ai trasferimenti, dalle interviste alle curiosità, non perderti nulla.</p>
+            <article>
+                <h3>Infortunio Pavard: ansia Inter, nuovo problema alla caviglia</h3>
+                <p>L'Inter è in ansia per le condizioni di Benjamin Pavard: il difensore ha accusato un nuovo problema alla caviglia. La situazione è monitorata con attenzione in vista dei prossimi impegni.</p>
+                <a href="https://www.spaziointer.it/" target="_blank" rel="noopener noreferrer">Leggi di più su Spazio Inter</a>
+            </article>
+            <article>
+                <h3>Inter al traguardo per Luis Henrique: le cifre finali coi bonus</h3>
+                <p>Si avvicina la chiusura dell'affare Luis Henrique per l'Inter. Romano annuncia i dettagli delle cifre, inclusi i bonus, per il giovane talento che andrebbe a rinforzare la rosa nerazzurra.</p>
+                <a href="https://www.fcinter1908.it/" target="_blank" rel="noopener noreferrer">Leggi di più su FC Inter 1908</a>
+            </article>
+            <article>
+                <h3>Inter, Lautaro e Frattesi verso la convocazione contro il Como: le scelte di Inzaghi</h3>
+                <p>Buone notizie per Inzaghi: Lautaro Martinez e Davide Frattesi sembrano essere recuperati e si dirigono verso la convocazione per la partita contro il Como, con il tecnico che valuterà le scelte per la formazione.</p>
+                <a href="https://www.corrieredellosport.it/squadra/calcio/inter/t127" target="_blank" rel="noopener noreferrer">Leggi di più su Corriere dello Sport</a>
+            </article>
+        </section>
+
+        ---
+
+        <section id="contatti">
+            <h2>Contatti</h2>
+            <p>Hai domande o vuoi condividere la tua passione nerazzurra? Contattaci!</p>
+            <p>Email: <a href="mailto:info@sitointerfan.it">info@sitointerfan.it</a> (Email di esempio)</p>
+            <p>Seguici sui social: [Link a Facebook], [Link a Instagram], [Link a Twitter]</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sito Inter Fan (Non Ufficiale) - Tutti i diritti riservati. Le informazioni sono state recuperate da fonti pubbliche.</p>
+    </footer>
+
+</body>
+</html>
